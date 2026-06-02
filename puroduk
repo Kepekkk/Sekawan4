@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produk - Pengingat Shalat</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>🕌 Pengingat Shalat</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="design-process.html">Design Process</a></li>
+                    <li><a href="produk.html" class="active">Produk</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>Produk Kami</h2>
+                <p>Aplikasi dan fitur pengingat shalat</p>
+            </section>
+
+            <section class="prayer-times">
+                <h3>Fitur Utama</h3>
+                <div class="prayer-grid">
+                    <div class="prayer-card">
+                        <h4>🔔 Notifikasi</h4>
+                        <p class="time">Real-time</p>
+                        <p>Alert sebelum waktu shalat</p>
+                    </div>
+                    <div class="prayer-card">
+                        <h4>📍 Lokasi</h4>
+                        <p class="time">GPS</p>
+                        <p>Jadwal sesuai lokasimu</p>
+                    </div>
+                    <div class="prayer-card">
+                        <h4>📱 Mobile</h4>
+                        <p class="time">Responsive</p>
+                        <p>Bisa dibuka di HP</p>
+                    </div>
+                    <div class="prayer-card">
+                        <h4>🎨 UI Modern</h4>
+                        <p class="time">Beautiful</p>
+                        <p>Desain menarik & mudah</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reminder">
+                <h3>Download Aplikasi</h3>
+                <p style="text-align: center; color: #666; margin: 20px 0;">Aplikasi pengingat shalat yang bisa kamu gunakan sehari-hari</p>
+                
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAHIxonBTCg/ovEr5hmbdRxz0tB3qlCbPw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https://www.canva.com/design/DAHIxonBTCg/ovEr5hmbdRxz0tB3qlCbPw/view?utm_content=DAHIxonBTCg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Produk Pengingat Shalat (Necode/Group 5)</a> oleh Dzaky Dante
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Pengingat Shalat - Dzaky Dante</p>
+        </footer>
+    </body>
+</html>
