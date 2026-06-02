@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sekawan4 | Pengingat Sholat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Sekawan4</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="design.html">Design process</a>
+      <a href="product.html">Product</a>
+    </nav>
+
+    <div class="container">
+      <div class="title">Alarm Waktu Sholat</div>
+      <div class="current-time" id="currentTime">00:00:00</div>
+
+      <div class="notification" id="notification"></div>
+
+      <div class="location-input">
+        <label>Lokasi:</label>
+        <div>
+          <select id="citySelect">
+            <option value="custom">Pilih Lokasi</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="surabaya">Surabaya</option>
+            <option value="bandung">Bandung</option>
+            <option value="medan">Medan</option>
+            <option value="semarang">Semarang</option>
+            <option value="yogyakarta">Yogyakarta</option>
+            <option value="makassar">Makassar</option>
+            <option value="palembang">Palembang</option>
+            <option value="malang">Malang</option>
+            <option value="custom">Lokasi Lainnya</option>
+          </select>
+          <input
+            type="text"
+            id="customLocation"
+            placeholder="Kota"
+            style="display: none"
+          />
+        </div>
+        <button class="btn" style="margin-top: 2%" onclick="updateLocation()">
+          Update
+        </button>
+      </div>
+
+      <div class="settings">
+        <h3 style="margin-bottom: 15px">Settings</h3>
+        <label>
+          <input type="checkbox" id="enableNotification" checked />
+          Aktifkan Notifikasi Suara
+        </label>
+        <label>
+          <input type="checkbox" id="enableAlert" checked />
+          Aktifkan Alert Browser
+        </label>
+        <label>
+          <input type="checkbox" id="enable15minBefore" checked />
+          Ingatkan 15 menit sebelumnya
+        </label>
+        <div class="settings-group">
+          <label>Volume Alarm (0-100):</label>
+          <input
+            type="number"
+            id="volumeControl"
+            min="0"
+            max="100"
+            value="80"
+          />
+        </div>
+
+        <!-- <div class="test-mode-section">
+          <h4>Mode Testing Manual</h4>
+          <p style="font-size: 12px; margin-bottom: 10px; opacity: 0.9;">
+            Masukkan waktu untuk menguji semua alarm
+          </p>
+          <div class="test-controls">
+            <label>
+              Jam:
+              <input
+                type="number"
+                id="testHour"
+                min="0"
+                max="23"
+                placeholder="00"
+              />
+            </label>
+            <label>
+              Menit:
+              <input
+                type="number"
+                id="testMin"
+                min="0"
+                max="59"
+                placeholder="00"
+              />
+            </label>
+            <button class="btn-test" onclick="enableTestMode()">
+              ✓ Aktifkan
+            </button>
+            <button class="btn-test danger" onclick="disableTestMode()">
+              ✕ Matikan
+            </button>
+          </div>
+          <button
+            class="btn-test"
+            onclick="testAllAlarms()"
+            style="width: 100%"
+          >
+            Test Semua Alarm (Otomatis)
+          </button>
+        </div> -->
+      </div>
+
+      <div class="prayer-times" id="prayerTimes"></div>
+    </div>
+
+    <audio id="alarmAudio" preload="auto">
+      <source
+        src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA=="
+        type="audio/wav"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
